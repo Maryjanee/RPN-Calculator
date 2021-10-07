@@ -1,54 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap");
 
-*{
-  margin:0;
-  padding:0 ;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  
 }
 
-
 body {
-  background-color: rgba(0, 0, 0, 0.658);
+  background: rgba(0, 0, 0, 0.658);
+  
 }
 
 #calc {
   width: 320px;
   height: 520px;
-  background-color: #eaedef;
+  background: #eaedef;
   margin: 0 auto;
   top: 20px;
   position: relative;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 #display {
   height: 120px;
+  background: #858693;
 }
+
+
 #computed {
   text-align: right;
   height: 20px;
   margin: 0 20px;
   padding-top: 20px;
   font-size: 15px;
-  color: #919191;
+  color: #fff;
 }
 #screen {
   text-align: right;
   height: 60px;
   margin: 10px 20px;
   font-size: 30px;
+ 
 }
 
 #keyboard {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   height: 400px;
+
 }
+
+.operator{
+  background: #F2923E;
+  
+}
+
 
 .digit,
 .empty {
-  background-color: #eaedeff5;
+  background-color: #fff;
 }
 .digit,
 .operator {
   cursor: pointer;
+  
 }
